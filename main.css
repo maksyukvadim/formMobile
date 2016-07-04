@@ -5,9 +5,12 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+.container {
+    width: 100%;
+}
 #mainContent {
     position: fixed;
-z-index: 2;
+    z-index: 2;
 }
 #logo {
    text-align: center;
@@ -15,24 +18,8 @@ z-index: 2;
     margin-left: 20%;
     opacity: 0.6;
 }
-.center {
-    text-align: center;
-}
-#TB_overlay {
-    background: linear-gradient(to bottom, #5600c7, #000000);
-    height: 100%;
-    left: 0;
-    opacity: 0.50;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-form  {
-    margin-top: 40%;
-}
 
-form input{
+  input{
     color: #e1dde8;
     border: none;
     background: inherit;
@@ -53,13 +40,10 @@ form label {
 form div {
     border-bottom: 1px solid #e1dde8;
 }
-form div:first-child {
-    margin-bottom: 10%;
-}
+
 
 #btnSingIn {
-    width: 90%;
-    padding: 5%;
+    width: 70%;
     border-radius: 50px;
     margin-top: 10%;
     background-color: #ff004b;
@@ -67,19 +51,63 @@ form div:first-child {
     font-size: 130%;
     border: none;
     outline:none;
-    transition: left 2s;
-
-
+}
+#TB_overlay {
+    background: linear-gradient(to bottom, #5600c7, #000000);
+    height: 100%;
+    left: 0;
+    opacity: 0.50;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#form i{
+    color: #cecece;
 }
 
-#btnSingIn {
-    -webkit-transform: scale(1, 1);
-    -webkit-animation: pulsing 2s infinite; /* IE 10+ */
+#form input{
+    border-bottom: 0;
+    font-size: large;
+}
+#form input:focus {
+    border-bottom: 0;
+    box-shadow: 0 0 0 0 ;
+
+}
+form input:focus {
+    border-bottom: 0;
+}
+#valBtn {
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
-@-webkit-keyframes pulsing {
-    0%     { -webkit-transform: scale(0.25, 0.25);}
-    25%    { -webkit-transform: scale(0.5, 1.0);}
-    50%    { -webkit-transform: scale(0.75, 1.0);}
-    100%   { -webkit-transform: scale(1.0, 1.0);}
+#circleForBtn {
+    position: absolute;
+    top: 14%;
+    left: 17%;
+}
+.circle {
+    border-left-color: #ffffff !important;
+    border-right-color: #ffffff !important;
+    border-top-color: #ffffff !important;
+}
+.scale {
+    -webkit-transform: scale(20);
+}
+.ripple {
+    -webkit-transform: scale(100);
+    -ms-transform: scale(100);
+    transform: scale(100);
+    -webkit-transition: 2.25s all ease ;
+    transition: 2.25s all ease ;
+}
+#form div {
+    border-bottom: 1px solid #cecece;
+    padding: 0;
+}
+#form div i{
+    padding-top: 5px;
 }
