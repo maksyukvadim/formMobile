@@ -1,46 +1,26 @@
 body {
-    background: url("img/back1.jpg")  no-repeat center center fixed;
+    background: url("img/back1.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+
 .container {
     width: 100%;
 }
+
 #mainContent {
     position: fixed;
     z-index: 2;
 }
+
 #logo {
-   text-align: center;
+    text-align: center;
     margin-top: 20%;
-    margin-left: 20%;
+    margin-left: 10%;
     opacity: 0.6;
 }
-
-  input{
-    color: #e1dde8;
-    border: none;
-    background: inherit;
-    margin-left: 3%;
-    margin-bottom: 3%;
-    font-size: 150%;
-    outline:none;
-
-}
-
-form label {
-    color: #e1dde8;
-    margin-left: -10%;
-    font-size: 150%;
-
-}
-
-form div {
-    border-bottom: 1px solid #e1dde8;
-}
-
 
 #btnSingIn {
     width: 70%;
@@ -50,10 +30,11 @@ form div {
     color: #e1dde8;
     font-size: 130%;
     border: none;
-    outline:none;
+    outline: none;
 }
+
 #TB_overlay {
-    background: linear-gradient(to bottom, #5600c7, #000000);
+    background: linear-gradient(to bottom, #a387c8, #000000);
     height: 100%;
     left: 0;
     opacity: 0.50;
@@ -62,22 +43,62 @@ form div {
     width: 100%;
     z-index: 1;
 }
-#form i{
+
+#form {
+    margin-top: 20%;
+}
+
+#form i {
     color: #cecece;
 }
 
-#form input{
+#form input {
     border-bottom: 0;
-    font-size: large;
+    margin-bottom: 0;
 }
+
+::-webkit-input-placeholder {
+    color: #a79a9a;
+    font-weight: 300;
+    font-size: 16px
+}
+
+::-moz-placeholder {
+    color: #a79a9a;
+    font-weight: 300;
+    font-size: 16px
+}
+
+:-moz-placeholder {
+    color: #a79a9a;
+    font-weight: 300;
+    font-size: 16px
+}
+
+:-ms-input-placeholder {
+    color: #a79a9a;
+    font-weight: 300;
+    font-size: 16px
+}
+
 #form input:focus {
     border-bottom: 0;
-    box-shadow: 0 0 0 0 ;
+    box-shadow: 0 0 0 0;
+    border-bottom: 0;
 
 }
-form input:focus {
-    border-bottom: 0;
+
+#inputUserName {
+    color: #cecece;
+    font-size: 18px;
 }
+
+#inputPass {
+    color: #cecece;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
 #valBtn {
     position: absolute;
     left: 0;
@@ -89,25 +110,60 @@ form input:focus {
     top: 14%;
     left: 17%;
 }
+
 .circle {
     border-left-color: #ffffff !important;
     border-right-color: #ffffff !important;
     border-top-color: #ffffff !important;
 }
+
 .scale {
     -webkit-transform: scale(20);
 }
+
 .ripple {
     -webkit-transform: scale(100);
     -ms-transform: scale(100);
     transform: scale(100);
-    -webkit-transition: 2.25s all ease ;
-    transition: 2.25s all ease ;
+    -webkit-transition: 2.25s all ease;
+    transition: 2.25s all ease;
 }
-#form div {
+
+.borderBotInp {
     border-bottom: 1px solid #cecece;
     padding: 0;
 }
-#form div i{
+
+#form div i {
     padding-top: 5px;
+}
+
+#footer span {
+    color: #a79a9a;
+}
+
+#footer a {
+    color: #039be5;
+}
+
+#footer a {
+    color: #039be5;
+}
+
+.success {
+    border-bottom: 2px solid #37e237;
+
+}
+
+.error {
+    border-bottom: 2px solid #c51d4f;
+}
+
+.successIcon {
+    color: #37e237 !important;
+
+}
+
+.errorIcon {
+    color: #c51d4f !important;
 }
